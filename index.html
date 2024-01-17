@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etch-a-sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- color picker -->
+    <!-- One of the following themes -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css" />
+    <!-- 'classic' theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css" />
+    <!-- 'monolith' theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css" />
+    <!-- 'nano' theme -->
+    <!-- Modern or es5 bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+      </style>
+    <script src="etch-a-sketch.js" defer></script>
+</head>
+
+<body>
+    <h1>ETCH-A-SKETCH</h1>
+
+    <div class="container">
+        
+        <div class="canvas">
+
+        </div>
+    
+        <div class="features">
+            <div>
+                <input type="text" placeholder="Enter the size" onchange="setsize(this.value)"><button>Set Size</button>
+            </div>
+            <button onclick="changeColor('black')">black</button>
+            <button onclick="changeColor('white')">erasor</button>
+            <button onclick="resetCanvas()">clear</button>
+            
+        
+            
+    
+            
+  
+    
+        </div>
+        
+            <div class="color-picker"></div>
+            Color picker  
+    
+    
+    </div>
+    
+
+
+</body>
+
+</html>
